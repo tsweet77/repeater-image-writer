@@ -79,6 +79,7 @@ int main() {
     if (intention.substr(intention.size() - 4) == ".txt") {
         std::ifstream file(intention);
         std::string line;
+        intention.clear();
         while (std::getline(file, line)) {
             intention += line;
         }
