@@ -1,10 +1,12 @@
-Intention Repeater Spiritual Chat v3.0
+Intention Repeater Image Writer Color v2.2
 by Anthro Teacher aka Thomas Sweet
 Website: http://www.intentionrepeater.com
 Email: healing@intentionrepeater.com
 Forum: https://intentionrepeater.boards.net/
 GitHub: https://github.com/tsweet77
 
-This program lets you ask questions, and will form seemingly random words that have influence from Intention Repeater functionality. Though the words have been found to have some logic.
+This program converts your intention (or textfile) into a 1920x1080 BMP in color.
 
-It needs to be run in a terminal: ./Intention_Repeater_Spiritual_Chat
+Each time you run it, you will get a different color.
+
+It needs to be run in a terminal: ./Intention_Repeater_Image_Writer_Color
