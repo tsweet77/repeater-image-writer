@@ -13,6 +13,7 @@ Writes an intention to a 1920x1080 BMP.
 #include <cstdlib>  // For rand() and srand()
 #include <ctime>    // For time()
 #include <random>
+#include <limits>
 
 struct RGB {
     unsigned char r;
@@ -72,7 +73,9 @@ RGB getColorForChar(char c, int lowestASCII, int range, int rRand, int gRand, in
 
 int main() {
     std::string intention;
-    std::cout << "Enter Intention or Filename (.txt): ";;
+    std::cout << "Intention Repeater Image Writer Color v2.3" << std::endl;
+    std::cout << "by Anthro Teacher" << std::endl;
+    std::cout << "Enter Intention or Filename (.txt): ";
     std::getline(std::cin, intention);
 
     // If intention ends in ".txt" then open the filename given and store its contents in intention
@@ -135,6 +138,12 @@ int main() {
     bmpFile.close();
 
     std::cout << filename << " written." << std::endl;
+
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    // Wait for the user to press Enter before quitting
+    std::cout << "Press Enter to Quit...";
+    std::cin.get();
 
     return 0;
 }
